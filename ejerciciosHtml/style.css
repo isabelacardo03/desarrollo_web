@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header, li{
+    margin: 10px;
+    padding: 3px;
+    border: 1px;
+}
+
+/* los puntos especifican clases*/
+header .texto-blanco{
+    background-color: rgb(255, 255, 255);
+}
+
+/*
+.texto-blanco, .texto-blanco a{
+    color: beige;
+    color: black;
+    font-size: 30px;
+}*/
+
+@font-face {
+    font-family: "Bree Serif";
+    src: url("fonts/BreeSerif-Regular.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: "Forum";
+    src: url("fonts/Forum-Regular.ttf") format(truetype);
+}
+
+:root{
+    --color-principal-verde: rgb(25, 88, 25);
+    --color-principal-naranja: rgb(255, 136, 16);
+
+    --fondo-secciones-claro: rgb(251, 252, 225);
+
+    --fuente-titulo: "Forum", serif;
+    --tamaño-titulos:30px;
+
+    --margenes-entre-bordes:100px;
+
+    --border-redondeado: 10px;
+    --borde-grosor: 3px;
+    --borde-color:var(--color-principal-naranja);
+    --padding-boton:10px;
+}
+
+.botones-cabecera a{
+    border: var(--borde-grosor) solid var(--borde-color);
+    border-radius: var(--border-redondeado);
+    padding: var(--padding-boton);
+    text-decoration: none;
+}
+ 
