@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root{
+    --color-fondo-principal: #FDF5E6;
+    --color-texto-principal: #6E4228;
+    --color-detalle-verde: #87A96B;
+    --fuente-titulos: 'Montserrat';
+    --fuente-parrafos: 'Open Sans';
+}
+
+header{
+    background-color: var(--color-detalle-verde);
+}
+
+.logo img{
+    height: 50px;
+}
