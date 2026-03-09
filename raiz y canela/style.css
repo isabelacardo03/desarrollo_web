@@ -11,8 +11,11 @@
     --color-fondo-principal: #FDF5E6;
     --color-texto-principal: #6E4228;
     --color-detalle-verde: #87A96B;
-    --fuente-titulos: 'Montserrat';
-    --fuente-parrafos: 'Open Sans';
+    --fuente-titulos: moserrat, sans-serif;
+    --fuente-parrafos: open sans, sans-serif;
+    --colorbtn: #ff9f51;
+    --sombra-botones-claro: rgba(255, 251, 251, 0.623) 0px 3px 8px;
+    --spmbra-botones-oscuro:rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 header{
@@ -36,7 +39,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 20px; /*separacion del flex*/
 }
 
 nav ul li{
@@ -46,17 +49,76 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: var(--color-fondo-principal);
-    font-family:var(--fuente-titulos);
+    font-family: var(--fuente-titulos);
     font-weight: 400;
 }
 
 
 .boton-pedir a{
     text-decoration: none;
-    background-color: #d59b8d;
+    background-color:#ff9f51;
     width: 200px;
     height: 40px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--fuente-titulos);
+    font-weight: 600;
 }
+
+.hero{
+    height: calc(100vh - 74px);
+    background-color: var(--color-fondo-principal);
+    background-image: url('img/anisa-cakesandbakes-c07YNJmNfaE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    h1{
+        color: white;
+        font-family: var(--fuente-titulos);
+        font-size: 3rem;
+        transform: capitalize;
+        
+    }
+    p{
+        color: white;
+        font-family: var(--fuente-parrafos);
+        font-size: 2rem;
+        
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        background-color: var(--colorbtn);
+        padding: 10px 30px;
+        border-radius: 7px;
+        box-shadow: var(--sombra-botones-oscuro);
+        font-family: var(--fuente-parrafos);
+    }
+    .hero-botones{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    }
+
+}
+.capa-oscura{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+}
+.capa-textos{
+    z-index: 0;
+    position: relative;
+}
+
