@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-:root{
+:root {
     --color-texto-principal: #FDF5E6;
     --color-fondo-principal: #6E4228;
     --color-detalle-verde: #87A96B;
@@ -15,39 +15,40 @@
     --fuente-parrafos: open sans, sans-serif;
     --colorbtn: #ff9f51d2;
     --sombra-botones-claro: rgba(255, 251, 251, 0.623) 0px 3px 8px;
-    --sombra-botones-oscuro:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --sombra-botones-oscuro: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     --margen-interna-secciones: 30px 40px;
 }
 
-header{
+header {
     background-color: var(--color-detalle-verde);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-    
+
 }
 
-.logo img{
+.logo img {
     height: 50px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 10px;
-    
+
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 20px; /*separacion del flex*/
+    gap: 20px;
+    /*separacion del flex*/
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: var(--color-texto-principal);
     font-family: var(--fuente-titulos);
@@ -55,9 +56,9 @@ nav ul li a{
 }
 
 
-.boton-pedir a{
+.boton-pedir a {
     text-decoration: none;
-    background-color:var(--colorbtn);
+    background-color: var(--colorbtn);
     width: 200px;
     height: 40px;
     padding: 20px;
@@ -69,7 +70,7 @@ nav ul li a{
     font-weight: 600;
 }
 
-.hero{
+.hero {
     height: calc(100vh - 74px);
     background-color: var(--color-fondo-principal);
     background-image: url('img/anisa-cakesandbakes-c07YNJmNfaE-unsplash.jpg');
@@ -82,21 +83,23 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    h1{
+
+    h1 {
         color: white;
         font-family: var(--fuente-titulos);
         font-size: 3rem;
         transform: capitalize;
-        
+
     }
-    p{
+
+    p {
         color: white;
         font-family: var(--fuente-parrafos);
         font-size: 2rem;
-        
+
     }
-    a{
+
+    a {
         text-decoration: none;
         color: white;
         background-color: var(--colorbtn);
@@ -105,53 +108,59 @@ nav ul li a{
         box-shadow: var(--sombra-botones-oscuro);
         font-family: var(--fuente-parrafos);
     }
-    .hero-botones{
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
+
+    .hero-botones {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
     }
 
 }
-.capa-oscura{
+
+.capa-oscura {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
 }
-.capa-textos{
+
+.capa-textos {
     z-index: 0;
     position: relative;
 }
 
-.rollos{
+.rollos {
     background-color: var(--color-fondo-principal);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--margen-interna-secciones); 
-    color:var(--color-texto-principal);
+    padding: var(--margen-interna-secciones);
+    color: var(--color-texto-principal);
 }
-.rollos-descripcion{
-    flex:1;
+
+.rollos-descripcion {
+    flex: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
     font-family: var(--fuente-parrafos);
-      h2{
+
+    h2 {
         font-family: var(--fuente-titulos);
         font-size: 3rem;
         line-height: 50px;
-        
+
     }
-    h3{
-      font-size: 1.5rem;
+
+    h3 {
+        font-size: 1.5rem;
         margin-bottom: 20px;
 
     }
 }
 
-.rollos-contenido{
+.rollos-contenido {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -159,7 +168,7 @@ nav ul li a{
     width: 100%;
     margin-bottom: 20px;
 
-    a{
+    a {
         text-decoration: none;
         background-color: var(--color-texto-principal);
         color: var(--color-detalle-verde);
@@ -173,8 +182,8 @@ nav ul li a{
 
 }
 
-.rollos-productos{
-    flex:2;
+.rollos-productos {
+    flex: 2;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -184,29 +193,31 @@ nav ul li a{
     flex-wrap: nowrap;
 
 }
-.rollo-producto{
+
+.rollo-producto {
     border: 1px solid var(--colorbtn);
     border-radius: 10px;
     background-color: var(--colorbtn);
     overflow: hidden;
-    
+
 }
-.rollos-productos img{
+
+.rollos-productos img {
     width: 100%;
     border-radius: 10px;
 }
 
-.contenido-rollo{
+.contenido-rollo {
     padding: 30px;
 
-    h2{
+    h2 {
         text-align: center;
         font-family: var(--fuente-titulos);
         font-size: 1.5rem;
         margin-bottom: 3px;
     }
 
-    h3{
+    h3 {
         text-align: center;
         font-family: var(--fuente-parrafos);
         font-size: 1.2rem;
@@ -214,69 +225,70 @@ nav ul li a{
 
     }
 
-    ul{
+    ul {
         margin: 15px 0px;
         margin-left: 20px;
         font-family: var(--fuente-parrafos);
     }
 
-    .precio{
+    .precio {
         font-size: 1.5rem;
     }
 
-    .precio a{
-            text-decoration:none;
-            color:var(--color-detalle-verde);
-            background-color: var(--color-texto-principal);
-            text-align: center;
-            padding: 10px 10px;
-            border-radius: 30px;
-            box-shadow: var(--sombra-botones-oscuro);
-        }
-    
+    .precio a {
+        text-decoration: none;
+        color: var(--color-detalle-verde);
+        background-color: var(--color-texto-principal);
+        text-align: center;
+        padding: 10px 10px;
+        border-radius: 30px;
+        box-shadow: var(--sombra-botones-oscuro);
+    }
+
 }
 
-.rollos-ingredientes{
+.rollos-ingredientes {
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
     justify-content: space-between;
     padding: 10px;
 }
 
-.rollo-ingrediente{
+.rollo-ingrediente {
     background-color: var(--color-detalle-verde);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     border-radius: 10px;
     padding: 20px;
     font-size: 1.2rem;
 
 }
 
-.menu-dia{
+.menu-dia {
     background-color: var(--color-texto-principal);
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
     padding: var(--margen-interna-secciones);
     text-align: center;
 
-    h2{
+    h2 {
         font-family: var(--fuente-titulos);
         font-size: 3rem;
     }
-    a{
+
+    a {
         background-color: var(--color-fondo-principal);
         text-decoration: none;
         color: var(--color-texto-principal);
-        
-        
+
+
     }
 
-    .estilo-boton a{
+    .estilo-boton a {
         text-decoration: none;
-        background-color:var(--color-fondo-principal);
+        background-color: var(--color-fondo-principal);
         width: 200px;
         height: 40px;
         padding: 20px;
@@ -284,50 +296,120 @@ nav ul li a{
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         color: white;
         font-family: var(--fuente-parrafos);
-        font-size:1.2rem;
-        
+        font-size: 1.2rem;
+
     }
-    .menu-items{
+
+    .menu-items {
         display: flex;
         gap: 30px;
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
 
-            h3{
-                font-family: var(--fuente-titulos);
-                font-size: 1.5rem;
-                margin-bottom: 10px;
-            }
-
-            p{
-                font-family: var(--fuente-parrafos);
-                font-size: 1.2rem;
-            }
-            
+        h3 {
+            font-family: var(--fuente-titulos);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
 
-    .opcion-almuerzo{
-           box-shadow: var(--sombra-botones-oscuro);
-           padding: 20px;
-           border-radius: 20px;
-           overflow: hidden;
-           text-align: left;
-           margin-bottom: 30px;
+        p {
+            font-family: var(--fuente-parrafos);
+            font-size: 1.2rem;
+        }
 
-           img{
+    }
+
+    .opcion-almuerzo {
+        box-shadow: var(--sombra-botones-oscuro);
+        padding: 20px;
+        border-radius: 20px;
+        overflow: hidden;
+        text-align: left;
+        margin-bottom: 30px;
+
+        img {
             border-radius: 10px;
             width: 270px;
             height: 300px;
             object-fit: cover;
-            padding:10px;
-           }
+            padding: 10px;
+        }
 
-           ul{
-            margin-left:20px;
+        ul {
+            margin-left: 20px;
             margin-top: 10px;
-           }
-        
+        }
+
+    }
+
+}
+
+.bowl {
+    background-color: var(--color-fondo-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--margen-interna-secciones);
+    color: var(--color-texto-principal);
+
+    .bowls-titulo {
+        h2 {
+            font-family: var(--fuente-titulos);
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+    }
+
+    .bowls-items {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .bowl-item,
+    .ensalada-item {
+        width: 300px;
+        border: 1px solid var(--colorbtn);
+        border-radius: 10px;
+        background-color: var(--colorbtn);
+        padding: 20px;
+        box-shadow: var(--sombra-botones-oscuro);
+
+        img {
+            border-radius: 10px;
+            width: 270px;
+            height: 300px;
+            object-fit: cover;
+            padding: 10px;
+        }
+
+        p {
+            font-family: var(--fuente-parrafos);
+            font-size: 1.2rem;
+        }
+
+        a {
+            background-color: var(--color-texto-principal);
+            text-decoration: none;
+            color: var(--color-detalle-verde);
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+
+        .boton-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .boton-item span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
     }
 
 }
