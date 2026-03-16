@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: rgb(233, 233, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+
+.contenedor{
+    max-width: 80vw;
+    box-shadow:rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color: rgba(0, 1, 7, 0.89);
+    border-top: 9px solid rgb(47, 58, 124);
+    border-bottom: 2px solid rgb(47, 58, 124);
+
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2.5rem;
+        color: white;
+        margin: 10px;
+    }
+    
+
+
+}
