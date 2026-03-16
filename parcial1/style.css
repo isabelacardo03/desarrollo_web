@@ -5,13 +5,12 @@
 }
 
 
-
 body{
     background-color: rgb(233, 233, 232);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 70vh;
 }
 
 
@@ -22,20 +21,44 @@ body{
     border-radius: 3px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     gap:20px;
     background-color: rgba(0, 1, 7, 0.89);
     border-top: 9px solid rgb(47, 58, 124);
     border-bottom: 2px solid rgb(47, 58, 124);
 
     h1{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.8rem;
         color: white;
         margin: 10px;
     }
     
+    p{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 1.2rem;
+    }
 
+   
+}
 
+.campo{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 15px;
+
+    input, select{
+        border-radius: 2px;
+        border: 2px solid rgb(47, 58, 124);
+        margin-bottom: 10px;
+    }
+}
+
+button{
+    background-color:rgb(47, 58, 124);
+    color:white;
+    border-radius: 2px;
+    border: 2px solid rgb(24, 34, 92)
 }
